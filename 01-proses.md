@@ -1,283 +1,90 @@
----
-title: Proses
-author: Praktikum Sistem Operasi
-institute: Ilmu Komputer IPB
-date: 2023
-theme: Dresden
-header-includes:
-    - \usepackage{tikz}
-    - \renewcommand{\figurename}{Gambar}
----
+# LAPORAN HASIL PRAKTIKUM
 
-# Intro
+Nama   :Y. Agatha Natsua
 
-## Peraturan
+Nim    : 09030282327052 
 
-- Pakaian sopan
-- Kehadiran minimal 80%
-- Toleransi keterlambatan 20 menit
-- Tidak membawa makanan ke lab
+Kelas  :TK4B 
+
+Program Studi : Teknik Komputer 
+
+## Judul Percobaan  
+MODUL 1 | Pengkabelan / Cabling 
 
 ---
 
-![Tata tertib mahasiswa IPB](img/tatib.jpg){width=80%}
+## Alat dan Bahan
+1. Kabel UTP
+![images](https://github.com/user-attachments/assets/a04dc54f-0a38-4f72-9420-70f2a1d659aa)
+2. crimping tool
+![Untitled](https://github.com/user-attachments/assets/3d9e6438-a1ab-4019-92e3-1a3628b458b5)
+3. Konektor RJ45
+![Untitled](https://github.com/user-attachments/assets/35689bb1-e806-470d-87ab-2b4ecf8b7bf7)
 
-## LMS
+4.Lan Cable Tester
+![Untitled](https://github.com/user-attachments/assets/dc54d3fd-75c7-4b35-9bb0-53cac10d9782)
 
-- <https://class.ipb.ac.id>
-- Buku acuan:
-    - Silberschatz *et al.* 2018. *Operating System Concepts*. Ed ke-10.
-- Proporsi nilai praktikum (30%):
-    - UTSP: 5%
-    - UASP: 5%
-    - Tugas: 20%
+---
+## Langkah kerja crimping kabel UTP Straight
+1. Siapkan alat dan bahan seperti,
 
+• Kabel UTP
 
-# Proses
+• Konektor RJ45
 
-## Apa itu proses?
+• Crimping Tool
 
-## Apa itu proses?
+• Lan Cable Tester
 
-Program yang sedang berjalan.
+2. Potong kabel UTP, potong sedikit untuk membuka isolasi kabel tersebut menggunakan Crimping tool
 
-> A program in execution.[^01-process]
+3. Atur kabl sesuai urutan kabel straight, yaitu :
 
-[^01-process]: Silberschatz *et al.* (2018), *Operating System Concepts*, hlm 106.
+-putih oren = oren
 
-## Bagaimana cara menjalankan program?
+-putih hujau = biru
 
-Misalkan kita ingin menjalankan program Firefox. Ada berapa cara?
+-putih biru = hijau
 
-## Bagaimana cara menjalankan program?
+-putih coklat = coklat
 
-Misalkan kita ingin menjalankan program Firefox. Ada berapa cara?
+4. untuk kabel Cross, berurutan lain. yaitu,
 
-Dua cara:
+- putih putih hijau = hijau
 
-1. **CLI**: buka *shell*, lalu ketikkan perintah `firefox`.
-2. **GUI**: klik ikon Firefox pada menu aplikasi.[^01-ff]
+- putih oren = biru
 
-[^01-ff]: jika ikon diklik, program akan tetap dijalankan melalui *shell*; coba cek isi *file* `/usr/share/applications/firefox.desktop`.
+- putih biru = oren
 
+- putih coklat = coklat
 
-# Shell
+5. berikut gambar urutan kabel straight dan cross,
+![image](https://github.com/user-attachments/assets/f2635c3a-8758-487e-ad88-1fe6f28a531a)
+![image](https://github.com/user-attachments/assets/433b7339-9749-4f6e-bf9b-df2b7a9e2993)
 
+6. setelah kabel dirasa telah rapi dan berurutan kemudian dipotong hingga sejajar
 
-## Apa itu *shell*?
-
-## Apa itu *shell*?
-
-- *Shell* adalah antarmuka antara pengguna dengan *kernel*.
-
-
-## *Kernel* vs *Shell*
-
-- *kernel* = ...
-- *shell* = ...
-
-## *Kernel* vs *Shell*
-
-- *kernel* = inti
-- *shell* = kulit
-
-\begin{center}
-  \begin{tikzpicture}
-    \draw[red,thick] (2,2) circle (2.6cm);
-    \draw[red,thick] (2,2) circle (1cm);
-    \node at (2,2) {kernel};
-    \node at (3,3.5) {shell};
-  \end{tikzpicture}
-\end{center}
+7. Setelah kabel straight dan cross di urutkan kemudian memasukan kabel kedalam konektor dan di rekatkan menggunakan crimping tool![WhatsApp Image 2025-01-30 at 22 48 18_3584b2d9](https://github.com/user-attachments/assets/d670d83a-e1b6-435f-a495-b328ae5418c8)
+ 
+8. hubungkan kabel kedalam Lan Cable Tester untuk memeriksa koneksi.
 
 
-## *Kernel* vs *Shell*
+## Hasil Percobaan  
 
-- *Kernel* adalah inti dari sistem operasi.
-- *Shell* adalah antarmuka antara pengguna dengan *kernel*.
-- *Shell* bertugas untuk menjalankan aplikasi pengguna.
-    - *user* &rarr; *shell* &rarr; *kernel*.
+| jawab    | 
+|---------------|
+| Dalam percobaan ini, membuat dua jenis kabel, yaitu kabel straight dan kabel cross, serta menguji keduanya menggunakan alat tes kabel (kable tester). Untuk hasil percobaan staright urutan Pada ujung kabel A, urutan pin dari 1 hingga 8 harus terhubung lurus dengan pin 1 hingga 8 pada ujung kabel B. Jika semua lampu dari 1 hingga 8 pada  kedua bagian tester menyala, berarti kabel yang dibuat berfungsi dengan baik. Jika salah satu atau beberapa lampu tidak menyala, ini menunjukkan adanya kesalahan dalam pemasangan konektor RJ-45 atau urutan kabel. Pada percbaan cross, pin di silangkan antara ujung kabel A dan B. Pin 1 dihubungkan hubungkan dengan 3 di ujung B, pin 2 diujung A terhubung dengan pin 6 di ujung B, dsn pin 6 di ujung A terhubung dengan pin 2 di ujung B.Sama seperti kabel straight, jika semua lampu (1 hingga 8) menyala di kedua bagian alat tes kabel, maka kabel cross yang dibuat berfungsi dengan baik. Jika ada lampu yang tidak menyala, berarti ada kesalahan pada pemasangan konektor RJ-45 atau urutan kabel. | 
 
-## Contoh *kernel*
+## Analisis Percobaan  
 
-- UNIX
-    - BSD, Darwin (macOS, iOS)
-    - IBM AIX, HP-UX, Oracle Solaris
-    - Linux
-- Windows NT
-
-## Contoh *shell*
-
-- Bourne shell (`sh`)
-- Bourne-again shell (`bash`)
-- Z shell (`zsh`)
-- Windows PowerShell
-
-
-## Bagaimana *shell* bisa membuat proses?
-
-**Tugas**: baca Silberschatz *et al.* (2013), hlm 116--119 untuk materi dan tugas praktikum berikutnya.
-
-
-## Manajemen Proses
-
-Berikut fungsi-fungsi pustaka dalam bahasa C yang dipakai untuk manajemen proses.
-
-\small
-
-| Fungsi     | Pustaka      | Keterangan                                        |
-| ---------- | :----------- | ------------------------------------------------- |
-| `system()` | `stdlib.h`   | Membuat proses *shell* untuk menjalankan perintah |
-| `exit()`   | `stdlib.h`   | Mengakhiri proses secara normal                   |
-| `exec()`   | `unistd.h`   | Mengganti *image* proses lama dengan yang baru    |
-| `fork()`   | `unistd.h`   | Membuat proses *child* dengan cara duplikasi      |
-| `wait()`   | `sys/wait.h` | Menunggu proses *child* berganti status           |
-| `pause()`  | `unistd.h`   | Menunggu sampai ada sinyal masuk                  |
-| `signal()` | `signal.h`   | Menangani sinyal yang masuk                       |
-| `kill()`   | `signal.h`   | Mengirim sinyal ke sebuah proses
-
-
-# `system()`
-
-## Fungsi `system()`
-
-`int system(char *command);`{.c}
-
-- Menjalankan `command` dengan menjalankan *shell* terlebih dahulu[^01-man-system]:
-    - `sh -c "command"`
-
-[^01-man-system]: lihat '`man system`'
-
-## Contoh
-
-- Menjalankan perintah "`ps --forest`".
-
-    ~~~c
-    // system.c
-    int main()
-    {
-        puts("Running command");
-
-        system("ps --forest");
-
-        puts("Done");
-        return 0;
-    }
-    ~~~
-
-## Hierarki proses
-
-~~~
-..
- \_ bash
-     \_ ./system
-         \_ sh
-             \_ ps
-~~~
+| jawab     | 
+|---------------|
+| setelah kedua ujung kabel terpasang dengan konektor RJ-45, gunakan alat penguji kabel (tester) untuk memeriksa kabel. Sambungkan kedua ujung kabel ke tester. Perhatikan indikator lampu pada tester. Jika semua lampu dari 1 hingga 8 pada kedua bagian tester menyala, berarti kabel yang dibuat berfungsi dengan baik. (Note: Jika salah satu atau beberapa lampu tidak menyala, ini menunjukkan adanya kesalahan dalam pemasangan konektor RJ-45 atau urutan kabel. Periksa dan perbaiki kesalahan yang mungkin terjadi) |
 
 ---
 
-- Bisa menjalankan rangkaian beberapa perintah sekaligus.
+## Kesimpulan Percobaan 
+|---------------|
+| konfigurasi straight digunakan untuk menghubungkan perangkat yang berbeda jenis (misalnya komputer dengan switch). Kabel straight-through adalah jenis pengkabelan di mana urutan pin di kedua ujung kabel identik, sehingga kabel terhubung langsung dari satu ujung ke ujung lainnya tanpa adanya perubahan urutan pin., sedangkan konfigurasi cross digunakan untuk menghubungkan perangkat yang sejenis (misalnya komputer dengan komputer). Penggunaan alat penguji kabel sangat penting untuk memastikan kabel jaringan berfungsi dengan baik sebelum digunakan. Jika semua lampu indikator pada tester menyala, ini menandakan bahwa kabel berfungsi dengan baik. Sebaliknya, jika ada lampu yang tidak menyala, ini menunjukkan adanya kesalahan pada pemasangan konektor RJ-45 atau urutan kabel. |
 
-- Contoh:
-
-    ~~~c
-    int main()
-    {
-        system("hostname | rev");
-        return 0;
-    }
-    ~~~
-
-## Latihan
-
-- Buat program untuk menjalankan perintah '`ps -A`'!
-
-- Buat program untuk mencetak kalender bulan Desember!
-
-
-
-# `exec()`
-
-## Fungsi `exec()`
-
-`int execvp(char *file, char *argv[]);`{.c}
-
-`int execlp(char *file, char *arg, ...);`{.c}
-
-- Menggantikan proses yang ada dengan proses baru[^01-exec]
-
-[^01-exec]: lihat '`man exec`'
-
-## Contoh `execlp()`
-
-- Parameter perintah ditempatkan pada *list* argumen.
-
-- Menjalankan perintah "`ps --forest`":
-
-    ~~~c
-    // exec.c
-    int main()
-    {
-        puts("Running command");
-
-
-        execlp("ps", "ps", "--forest", NULL);
-
-        puts("Done");
-        return 0;
-    }
-    ~~~
-
-## Contoh `execvp()`
-
-- Parameter perintah disimpan pada variabel *string array*.
-
-- Menjalankan perintah "`ps --forest`":
-
-    ~~~c
-    // exec.c
-    int main()
-    {
-        puts("Running command");
-
-        char *args[] = {"ps", "--forest", NULL};
-        execvp(args[0], args);
-
-        puts("Done");
-        return 0;
-    }
-    ~~~
-
-## Hierarki proses
-
-~~~
-..
- \_ bash
-     \_ ./exec
-~~~
-
-Setelah pemanggilan fungsi `exec`, proses lama akan ditimpa.
-
-~~~
-..
- \_ bash
-     \_ ps --forest
-~~~
-
-## Latihan
-
-- Buat program untuk menjalankan perintah '`ps -A`'!
-
-- Buat program untuk mencetak kalender bulan Juni!
-
-
-## `system()` vs `exec()`
-
-- Fungsi `system()` lebih mudah digunakan
-    - namun tidak efisien dalam penggunaan memori dan waktu
-    - karena harus membuat dua proses baru untuk tiap perintah
-
-- Fungsi `exec()` lebih efisien
-    - langsung menimpa proses yang sudah ada
-    - dipakai oleh *shell* untuk membuat proses baru
+---
